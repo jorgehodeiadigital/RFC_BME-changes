@@ -3,11 +3,9 @@
 
 La intencion de esta RFC es la proponer el uso de angular 18 en BME platform como forma de escalamiento horizontal y separacion funcional de codigo fuente del Frontend y Backend
 
-**Autor**: Jorge Lopez
-
 **Posted**: 26/07/2024
 
-**Status**: Open 
+**Status**: Abierto 
 
 ## Contexto
 
@@ -93,4 +91,12 @@ Y por ultimo asegurarse que el archivo index compilado tenga la etiqueta base ca
 La transicion dentro de la aplicacion sera exactamente la misma de pasar a cualquier otra vista, o pasar a la PWA actual:
 
 ![animation](https://github.com/user-attachments/assets/97453092-0627-4a2c-86ee-f6a5f341d090)
+
+## Esquema arquitectura
+
+![image](https://github.com/user-attachments/assets/eaea9106-22a8-473d-ad07-453b0cd0e080)
+
+## Autor
+
+- [@jorgehodeiadigital ](https://www.github.com/jorgehodeiadigital )
 
