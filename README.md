@@ -56,3 +56,29 @@ La creacion de una aplicacion (de ahora en adelante moduloBME) comienza con los 
 
 Esta estructura tiene su carpeta src, donde se crean componentes, vistas, interfaces y servicios; y archivos de personalizacion de eslint, Jest y de typescript que son versiones extendidas de las configuradas en el repositorio; esto, nuevamente para que haya una unificación en el codigo fuente y pruebas unitarias en los modulosBME. 
 
+Nx tambien tiene documentacion oficial donde se puede consultar [otros comandos ejecutores](https://nx.dev/nx-api/nx), igualmente existe una extension para visual studio code de Nx para utilizar schematics llamado [Nx console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console) que permite de forma visual crear recursos ubicando simplemente el espacio de trabajo que es la carpeta contenedora del proyecto en si:
+
+![image](https://github.com/user-attachments/assets/1ec1ead4-28a8-4f21-ab9d-6954afccf5c2)
+
+Tambien se pueden crear librerias que contengan logica de servicios y de reutilizacion de componentes y directivas mediante el comando `nx g @nx/angular:library nombre-de-la-libreria`, este comando crea una carpeta src y archivos simplificados de configuracion desde donde se puede comenzar a escalar la libreria a necesidad. 
+
+![image](https://github.com/user-attachments/assets/249c468e-e586-4117-8ad0-4d0b7a223d98)
+
+Una de las cosas mas importantes del comando de creacion de la libreria es la asignacion de un path que simplifica la importacion y exportacion de librerias de consumo interno. Recordemos que aunque estamos en un monorepositorio, el moduloBME no va a conocer nada por fuera de sus carpetas internas, 
+
+![image](https://github.com/user-attachments/assets/0b436d69-d182-4b6e-a173-aa36d94e87b3)
+
+De esta forma podemos consumir la libreria en cualquier moduloBME que lo requiera, como en el siguiente ejemplo que se consumio la libreria ui-lib en el componente table del moduloBME downtime_configuration para utilizar una etiqueta de un componente de angular material,
+
+![image](https://github.com/user-attachments/assets/5993633d-4cac-4f93-a43d-5b444dae9c88)
+
+Y en otro moduloBME (test-app) que se consumio la misma libreria en un componente de ejemplo,
+
+![image](https://github.com/user-attachments/assets/c467af2f-f6c6-41da-866f-a6d4742f4884)
+
+
+Así pues, cuando estemos ampliando y expandiendo podemos ver que podemos reutilizar componentes a traves de nuestros distintos modulosBME, y nuestro Monorepo empezara a notarse un poco mas de esta manera: 
+
+![image](https://github.com/user-attachments/assets/f8fa9de3-010a-4820-9a7c-f8fdadffa93b)
+
+
