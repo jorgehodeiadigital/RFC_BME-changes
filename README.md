@@ -86,6 +86,11 @@ Para servir en local un moduloBME se ejecuta el comando `nx serve nombre-del-mod
 
 ![image](https://github.com/user-attachments/assets/0211a85c-c041-482c-b7bc-73815e98794b)
 
-Y por ultimo asegurarse que el archivo index compilado tenga la etiqueta base cambiada de tal forma que se relativicen todas las llamadas de los recursos accionados por el index.html: en este caso en la carpeta _/buildapp/src/test_front_app/_ que es la carpeta creada para contener el resultado compilatorio del codigo del moduloBME que esta en el monorepositorio. De esta forma, en el repo de BME solo estara la compilacion del codigo typescript, scss y hmtl, ademas de las librerias que se requieren, de forma optimizada, comprimida, minimizadas, compatible con los navegadores de la version de angular utilizada, y eficiente; de dificil lectura para humanos, pero ordenada y organizada para nosotros como mantenedores del proyecto 
+Y por ultimo asegurarse que el archivo index compilado tenga la etiqueta base cambiada de tal forma que se relativicen todas las llamadas de los recursos accionados por el index.html: en este caso en la carpeta _/buildapp/src/test_front_app/_ que es la carpeta creada para contener el resultado compilatorio del codigo del moduloBME que esta en el monorepositorio. De esta forma, en el repo de BME solo estara la compilacion del codigo typescript, scss y hmtl, ademas de las librerias que se requieren, de forma optimizada, comprimida, minimizadas, compatible con los navegadores de la version de angular utilizada, y eficiente; de dificil lectura para humanos, pero ordenada y organizada para nosotros como mantenedores del proyecto:
 
 ![image](https://github.com/user-attachments/assets/27ac44a6-16bf-4946-a382-8a0396de619d)
+
+La transicion dentro de la aplicacion sera exactamente la misma de pasar a cualquier otra vista, o pasar a la PWA actual:
+
+![animation](https://github.com/user-attachments/assets/97453092-0627-4a2c-86ee-f6a5f341d090)
+
